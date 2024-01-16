@@ -28,6 +28,8 @@ class LotteryViewController: UIViewController {
 
 extension LotteryViewController {
     func configure() {
+        navigationItem.title = "Lottery"
+        
         textField.tintColor = .clear
         textField.inputView = pickerView
         

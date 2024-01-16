@@ -17,6 +17,12 @@
 		EC27584C2B56972C0078C1AA /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27584B2B56972C0078C1AA /* LotteryViewController.swift */; };
 		EC27584F2B5697A10078C1AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC27584E2B5697A10078C1AA /* Alamofire */; };
 		EC2758512B5699A60078C1AA /* LotteryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2758502B5699A60078C1AA /* LotteryManager.swift */; };
+		EC2758542B56AA9D0078C1AA /* Beer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2758532B56AA9D0078C1AA /* Beer.storyboard */; };
+		EC2758562B56AC7E0078C1AA /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2758552B56AC7E0078C1AA /* BeerViewController.swift */; };
+		EC2758582B56B2010078C1AA /* BeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2758572B56B2010078C1AA /* BeerManager.swift */; };
+		EC27585B2B56B6080078C1AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC27585A2B56B6080078C1AA /* Kingfisher */; };
+		EC27585E2B56BD390078C1AA /* BeerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC27585D2B56BD390078C1AA /* BeerList.storyboard */; };
+		EC2758602B56BD5E0078C1AA /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27585F2B56BD5E0078C1AA /* BeerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,11 @@
 		EC2758492B5695A40078C1AA /* Lottery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lottery.storyboard; sourceTree = "<group>"; };
 		EC27584B2B56972C0078C1AA /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		EC2758502B5699A60078C1AA /* LotteryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryManager.swift; sourceTree = "<group>"; };
+		EC2758532B56AA9D0078C1AA /* Beer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Beer.storyboard; sourceTree = "<group>"; };
+		EC2758552B56AC7E0078C1AA /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		EC2758572B56B2010078C1AA /* BeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; };
+		EC27585D2B56BD390078C1AA /* BeerList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeerList.storyboard; sourceTree = "<group>"; };
+		EC27585F2B56BD5E0078C1AA /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC27585B2B56B6080078C1AA /* Kingfisher in Frameworks */,
 				EC27584F2B5697A10078C1AA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +76,7 @@
 		EC2758332B5695280078C1AA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EC2758522B56AA8C0078C1AA /* Beer */,
 				EC2758482B5695970078C1AA /* Lottery */,
 				EC2758342B5695280078C1AA /* AppDelegate.swift */,
 				EC2758362B5695280078C1AA /* SceneDelegate.swift */,
@@ -86,6 +99,26 @@
 			path = Lottery;
 			sourceTree = "<group>";
 		};
+		EC2758522B56AA8C0078C1AA /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				EC27585C2B56BD2C0078C1AA /* List */,
+				EC2758532B56AA9D0078C1AA /* Beer.storyboard */,
+				EC2758552B56AC7E0078C1AA /* BeerViewController.swift */,
+				EC2758572B56B2010078C1AA /* BeerManager.swift */,
+			);
+			path = Beer;
+			sourceTree = "<group>";
+		};
+		EC27585C2B56BD2C0078C1AA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EC27585D2B56BD390078C1AA /* BeerList.storyboard */,
+				EC27585F2B56BD5E0078C1AA /* BeerListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +137,7 @@
 			name = Network;
 			packageProductDependencies = (
 				EC27584E2B5697A10078C1AA /* Alamofire */,
+				EC27585A2B56B6080078C1AA /* Kingfisher */,
 			);
 			productName = Network;
 			productReference = EC2758312B5695280078C1AA /* Network.app */;
@@ -135,6 +169,7 @@
 			mainGroup = EC2758282B5695280078C1AA;
 			packageReferences = (
 				EC27584D2B5697A10078C1AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC2758592B56B6080078C1AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC2758322B5695280078C1AA /* Products */;
 			projectDirPath = "";
@@ -151,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC27584A2B5695A40078C1AA /* Lottery.storyboard in Resources */,
+				EC2758542B56AA9D0078C1AA /* Beer.storyboard in Resources */,
+				EC27585E2B56BD390078C1AA /* BeerList.storyboard in Resources */,
 				EC2758412B56952A0078C1AA /* LaunchScreen.storyboard in Resources */,
 				EC27583E2B56952A0078C1AA /* Assets.xcassets in Resources */,
 				EC27583C2B5695280078C1AA /* Main.storyboard in Resources */,
@@ -164,11 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2758602B56BD5E0078C1AA /* BeerListViewController.swift in Sources */,
 				EC27584C2B56972C0078C1AA /* LotteryViewController.swift in Sources */,
 				EC2758392B5695280078C1AA /* ViewController.swift in Sources */,
+				EC2758562B56AC7E0078C1AA /* BeerViewController.swift in Sources */,
 				EC2758352B5695280078C1AA /* AppDelegate.swift in Sources */,
 				EC2758372B5695280078C1AA /* SceneDelegate.swift in Sources */,
 				EC2758512B5699A60078C1AA /* LotteryManager.swift in Sources */,
+				EC2758582B56B2010078C1AA /* BeerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +445,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		EC2758592B56B6080078C1AA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -412,6 +460,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC27584D2B5697A10078C1AA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		EC27585A2B56B6080078C1AA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC2758592B56B6080078C1AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -12,22 +12,24 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2YY-KX-wxW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SnS-u9-Sfi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="TYM-N2-65Q" kind="relationship" relationship="viewControllers" id="4kw-wQ-IeE"/>
+                        <segue destination="HHe-AN-FmL" kind="relationship" relationship="viewControllers" id="0Ga-5G-5Nu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AW-ec-nin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-519.84732824427476" y="-48.591549295774648"/>
         </scene>
-        <!--Item-->
+        <!--Lottery-->
         <scene sceneID="pry-E2-1om">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TYM-N2-65Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Zut-ED-ciX"/>
+                    <tabBarItem key="tabBarItem" title="Lottery" image="paperplane.fill" catalog="system" id="Zut-ED-ciX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XVN-Rt-cvL">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -52,5 +54,38 @@
             </objects>
             <point key="canvasLocation" x="980" y="-49"/>
         </scene>
+        <!--Beer-->
+        <scene sceneID="Qdh-1I-GVE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Beer" id="YKN-BI-s44" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W2U-in-Ma8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vz6-Hp-Txv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="649"/>
+        </scene>
+        <!--Beer-->
+        <scene sceneID="oU2-eM-c8T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHe-AN-FmL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beer" image="waterbottle.fill" catalog="system" id="1I3-zl-6ui"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m6K-Nq-qE0">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YKN-BI-s44" kind="relationship" relationship="rootViewController" id="1CX-5H-F8y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlT-EO-Wbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="649"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <image name="waterbottle.fill" catalog="system" width="78" height="128"/>
+    </resources>
 </document>
