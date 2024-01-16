@@ -31,7 +31,7 @@ class BeerViewController: UIViewController {
 
 extension BeerViewController {
     func configureNavigation() {
-        navigationItem.title = "Beer"
+        navigationItem.title = "Random Beer Recommand"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "맥주 리스트", style: .plain, target: self, action: #selector(rightBarButtonClicked))
         navigationItem.rightBarButtonItem?.tintColor = .black
@@ -55,9 +55,11 @@ extension BeerViewController {
         
         nameLabel.font = .boldSystemFont(ofSize: 18)
         nameLabel.textAlignment = .center
+        nameLabel.numberOfLines = 0
         
         descriptionLabel.font = .systemFont(ofSize: 14)
         descriptionLabel.textAlignment = .center
+        descriptionLabel.numberOfLines = 0
         
         randomButton.setTitle("다른 맥주 추천받기", for: .normal)
         randomButton.setImage(UIImage(systemName: "plus"), for: .normal)
@@ -65,7 +67,7 @@ extension BeerViewController {
     }
     
     func recommandBeer() {
-        BeerManager().requestToServer { beer in
+        BeerManager(url: "https://api.punkapi.com/v2/beers/random").requestToRandomServer { beer in
             if let image = beer.image_url {
                 let url = URL(string: image)
                 self.beerImageView.kf.setImage(with: url)
